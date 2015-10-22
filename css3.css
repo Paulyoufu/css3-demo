@@ -28,7 +28,7 @@ body
     width: 100%;
     top: 0;
     height: 50px;
-    background: #222222;
+    background: #252831;
 }
 
 .header .nav
@@ -69,11 +69,34 @@ li
 
 .hovers:hover
 {
-    background: darkred;
+    background: #2CC890;
     border: 1px solid rgba(255,255,255,.2);
 
 }
 
+.thumbnail-image
+{
+    display: block;
+    position: relative;
+    background: #000;
+}
+
+.thumbnail-image:before
+{
+    position: absolute;
+    float:top;
+    top: 220px;
+    left: 330px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.thumbnail-image:hover{
+    opacity: 0.6;
+}
 .header .nav li.current a
 {
     background: rgba(255, 255, 255, 255);
@@ -122,7 +145,6 @@ li
     font-size: 30px;
     text-align: center;
     font-weight: normal;
-
 }
 
 .tagline-caption
@@ -132,7 +154,6 @@ li
     font-size: 30px;
     text-align: center;
     font-weight: normal;
-
 }
 
 .wrapper
@@ -168,9 +189,8 @@ li
 
 .container
 {
-    width :750px;
-    margin: 0 auto;
-    background: blue;
+    width :1050px;
+    margin: 450px auto;
 }
 
 .footer
@@ -235,4 +255,114 @@ li
     max-width:100%;
     margin:30px auto;
     display: block;
+}
+
+.post-list-wrapper
+{
+    padding: 70px 0;
+    background: #ebeced;
+}
+
+.post
+{
+    float:left;
+    background: #ffffff;
+    width: 290px;
+    height: 420px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px rgba(0,0,0,.08);
+}
+
+.post .thumbnail
+{
+    display: block;
+    width: 290px;
+    height: 290px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.post .post-info
+{
+    margin: 24px;
+}
+
+.post h3
+{   text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.post .date
+{
+    margin-left: 24px;
+    bottom: 10px;
+    font-size: 13px;
+
+}
+
+/* foot
+
+.footer{
+
+    height: 100px;
+    background: #292d35;
+}
+.icon-wrapper{
+    margin-top: 30px;
+}
+
+.footer .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    margin-right: 7px;
+}
+
+.footer .icon a{
+    color:#fff;
+}
+
+.icon.github
+{
+    background: #2196F3;
+}
+
+.icon.weibo{
+    background: #032F2F;
+}
+
+.icon.email{
+    background: #000CD4;
+}
+
+.footcan
+{
+    width :1050px;
+    margin: 10px auto;
+}
+*/
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+}
+
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background:blue;
 }

@@ -1,0 +1,45 @@
+body{margin:0;}
+.divBlock{
+  /*  position: absolute;  z-index: 1;*/
+    width: 300px;
+    height: 400px;
+
+    background: #000;
+
+    top: 0;
+    left:50%;
+    opacity: 1;
+
+    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition:width 2s; /* Safari and Chrome */
+}
+
+.divBlock:hover
+{ transition:width 2s;
+
+}
+
+
+.imgBlock{
+    position: absolute;
+    display:block;
+    z-index:0;
+    left:50%;
+
+}
+
+div
+{
+    width:100px;
+    height:100px;
+    background:blue;
+    transition:width 2s;
+    -moz-transition:width 2s; /* Firefox 4 */
+    -webkit-transition:width 2s; /* Safari and Chrome */
+    -o-transition:width 2s; /* Opera */
+}
+
+div:hover
+{
+    width:300px;
+}
